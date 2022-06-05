@@ -16,6 +16,8 @@
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
     --effect-button-color: #2196f3;
+    --effect-mainlogo-color: #2196f3;
+    --secondary-footer-color: rgb(255, 255, 255, 0.6);
 }
 
 body {
@@ -29,8 +31,15 @@ body {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.9;
+    line-height: 1.19;
     letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.mainlogo {
+    color: var(--effect-mainlogo-color);
+}
+.endlogo {
+    color: #ffffff;
 }
 /* Для шапки навигации */
 .link-nav a {
@@ -39,6 +48,7 @@ body {
     line-height: 1.4;
     letter-spacing: 0.02em;
     font-weight: 500;
+    text-decoration: none;
 }
 .link-nav a:hover,
 .link-nav a:focus {
@@ -52,6 +62,7 @@ body {
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 /* для элементов управления */
@@ -73,16 +84,20 @@ body {
 }
 
 /* для списка проектов */
-.list-nav h3 {
+.list-nav > h3 {
+    font-family: 'Roboto';
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    font-style: normal;
     letter-spacing: 0.06em;
-    font-weight: 700;
 }
 .list-nav li > p {
     color: var(--secondary-text-color);
+    font-family: 'Roboto';
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.88;
     letter-spacing: 0.03em;
 }
 
@@ -104,6 +119,11 @@ body {
     background-color: #2f303a;
 }
 .herobut {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
     cursor: pointer;
     background-color: var(--effect-button-color);
     color: #fff;
@@ -136,4 +156,41 @@ body {
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+}
+.list {
+    list-style: none;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+.listfooter > a {
+    color: var(--secondary-footer-color);
+}
+.button {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.bgc-footer {
+    background-color: #2f303a;
+}
+.bgc-footer > p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+.text-adres {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 }
